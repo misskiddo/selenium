@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class autosuggest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 				System.setProperty("webdriver.gecko.driver", "C:\\webdrivers\\geckodriver.exe");
 				
