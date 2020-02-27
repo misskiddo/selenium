@@ -33,7 +33,12 @@ public class autosuggest {
 				WebElement toCity = driver.findElement(By.cssSelector("input[placeholder='To']"));
 				
 				toCity.sendKeys("JFK");
-				toCity.sendKeys(Keys.ARROW_DOWN);
+				try {
+					toCity.sendKeys(Keys.ARROW_DOWN);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				Thread.sleep(1000L);
 				toCity.sendKeys(Keys.ENTER);
 				//toCity.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN, Keys.ENTER);
