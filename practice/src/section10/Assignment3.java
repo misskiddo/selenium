@@ -13,7 +13,6 @@ public class Assignment3 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.itgeared.com/demo/1506-ajax-loading.html");
 		
-	//	driver.findElement(By.cssSelector(cssSelector))
 		driver.findElement(By.linkText("Click to load get data via Ajax!")).click();
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
