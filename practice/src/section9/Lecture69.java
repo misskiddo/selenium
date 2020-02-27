@@ -8,24 +8,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Lecture65 {
+public class Lecture69 {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-		String[] productsToAdd = { "Cucumber", "Carrot", "Beetroot" };
+		String[] productsToAdd = { "Cucumber", "Carrot", "Beetroot","Pumpkin" };
 
+		// Convert array to array list
 		List itemsNeededList = Arrays.asList(productsToAdd);
 
 		int j = 0;
 
 		List<WebElement> listProducts = driver.findElements(By.className("product-name"));
 
-		// Convert array to array list
-
-		List<WebElement> addToCartButtons = driver.findElements(By.xpath("//button[text()='ADD TO CART']"));
+		List<WebElement> addToCartButtons = driver.findElements(By.xpath("//div[@class='product-action']/button"));
 
 		for (int i = 0; i < listProducts.size(); i++) {
 
