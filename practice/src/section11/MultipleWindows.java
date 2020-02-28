@@ -16,7 +16,7 @@ public class MultipleWindows {
 		driver.get("https://accounts.google.com/");
 		
 		
-		System.out.println(driver.getTitle());
+		System.out.println("parent: " + driver.getTitle());
 		
 		driver.findElement(By.linkText("Help")).click();
 		
@@ -32,8 +32,14 @@ public class MultipleWindows {
 		
 		driver.switchTo().window(child);
 	
-		System.out.println(driver.getTitle());
+		// Print child title
+		System.out.println("child: " + driver.getTitle());
 		
+		//Switch back to parent
+		driver.switchTo().window(parent);
+		
+		// Print parent title
+		System.out.println("parent: " + driver.getTitle());
 		
 		
 	}
