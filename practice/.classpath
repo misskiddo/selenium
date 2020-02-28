@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="C:/selenium/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/TestAutomation/testng-7.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
